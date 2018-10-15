@@ -1,0 +1,9 @@
+.carousel-item-padding{
+    padding:100px 250px;
+}
+.add-section{
+    background: url("../image/pexels-photo-1390514.jpeg");
+    color:red;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}

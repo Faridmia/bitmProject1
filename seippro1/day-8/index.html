@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>start bootstrap</title>
+    <link href="css/bootstrap.css"  rel="stylesheet"/>
+    <link href="css/tyle.css"  rel="stylesheet"/>
+</head>
+<body>
+            <div class="jumbotron mb-0">
+                <div class="container">
+                    <h2>some content goes here about something.</h2>
+                    <p>some content goes here about something.some content goes here about something</p>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-sm bg-info navbar-light sticky-top">
+                <div class="container">
+                    <a href="">
+                        <img src="image/1.jpg" alt="" style="height: 30px;"/>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-target="#mainMenu" data-toggle="collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainMenu">
+                        <ul class="navbar-nav mr-auto">
+                            <li><a href="#" class="nav-link">Home</a> </li>
+                            <li><a href="#" class="nav-link">About</a> </li>
+                            <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Service</a>
+                                <ul class="dropdown-menu bg-info ">
+                                    <li><a href="" class="nav-link">service one</a> </li>
+                                    <li><a href="" class="nav-link">service two</a> </li>
+                                    <li><a href="" class="nav-link">service three</a> </li>
+                                    <li><a href="" class="nav-link">service four</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="nav-link">Gallery</a></li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li><a href="#" data-toggle="modal" data-target="#loginmodal" class="nav-link">Login</a> </li>
+                            <li><a href="#" data-toggle="modal" data-target="#signupmodal" class="nav-link">Sign Up</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+             <div id="mainSlider" class="carousel slide" data-ride="carousel" data-interval="2000">
+                 <ol class="carousel-indicators">
+                     <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                     <li data-target="#mainSlider" data-slide-to="1"></li>
+                     <li data-target="#mainSlider" data-slide-to="2"></li>
+                     <li data-target="#mainSlider" data-slide-to="3"></li>
+                 </ol>
+
+                 </ol>
+                 <div class="carousel-inner">
+                     <div class="carousel-item active">
+                         <img src="image/slider/1.jpg" class="w-100" height="340" alt=""/>
+                         <div class="carousel-caption">
+                             <h3>some content will be go here.</h3>
+                             <p>some content will be go here.some content will be go here.</p>
+                         </div>
+                     </div>
+                     <div class="carousel-item">
+                         <img src="image/slider/2.jpg" class="w-100" height="340" alt=""/>
+                         <div class="carousel-caption">
+                             <h3>some content will be go here.</h3>
+                             <p>some content will be go here.some content will be go here.</p>
+                         </div>
+                     </div>
+                     <div class="carousel-item">
+                         <img src="image/slider/4.jpg" class="w-100" height="340" alt=""/>
+                         <div class="carousel-caption">
+                             <h3>some content will be go here.</h3>
+                             <p>some content will be go here.some content will be go here.</p>
+                         </div>
+                     </div>
+                     <div class="carousel-item">
+                         <img src="image/slider/5.jpg" class="w-100" height="340" alt=""/>
+                         <div class="carousel-caption">
+                             <h3>some content will be go here.</h3>
+                             <p>some content will be go here.some content will be go here.</p>
+                         </div>
+                     </div>
+                 </div>
+                     <a href="#mainSlider" class="carousel-control-prev" data-slide="prev">
+                         <span class="carousel-control-prev-icon"></span>
+                     </a>
+                     <a href="#mainSlider" class="carousel-control-next" data-slide="next">
+                         <span class="carousel-control-next-icon"></span>
+                     </a>
+             </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                            <hr/>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>this is card header</h3>
+                            </div>
+                            <div class="card-body">
+                                <h3>this is card body</h3>
+                            </div>
+                            <div class="card-footer">
+                                <h3>this is card footer</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+     <hr/>
+
+
+
+
+
+
+
+            <div class="modal fade" id="loginmodal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Login Form</h2>
+                            <button type="button" class="close" data-dismiss="modal">
+                                &Cross;
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-sm-6">
+                                <form action="" method="post">
+                                    <div class="form-group">
+                                        <label for="e-mail">E-mail:</label>
+                                        <input type="email" name="email" id="e-mail" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password:</label>
+                                        <input type="password" name="password" id="password" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="btn" value="submit" class="btn btn-success btn-block"/>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="signupmodal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>modal header</h2>
+                            <button type="button" class="close" data-dismiss="modal">
+                                &Cross;
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h3>modal body</h3>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>modal footer</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                                  <script src="js/jquery-3.3.1.js"></script>
+                                  <script src="js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                          <script src="js/bootstrap.js"></script>
+
+                      </body>
+                      </html>
